@@ -1,6 +1,6 @@
 {{BASE_URL}} : http://localhost:3001/api
 
-API 01: {{BASE_URL}}/like/unlikeOrLike
+--------- API 01: {{BASE_URL}}/like/unlikeOrLike
 
 - Method: POST
 - xử lí like và bỏ like , đã kiểm tra trường hợp :
@@ -9,7 +9,7 @@ API 01: {{BASE_URL}}/like/unlikeOrLike
 
 * loại bỏ trường hợp ko truyền gì (data bị undefine) , gọi bừa
 
-  API02: {{BASE_URL}}/like/getLike
+--------- API02: {{BASE_URL}}/like/getLike
 
 - Method: GET
 - lấy thông tin người like theo user_id và id của nhà hàng, đã kiểm tra trường hợp :
@@ -27,7 +27,7 @@ API03: {{BASE_URL}}/restaurant/addRate
 * loại bỏ trường hợp ko truyền gì dữ liệu undefine
 * chỉ cho phép rate hợp lệ 1 <= rate <= 5
 
-API04: {{BASE_URL}}/restaurant/getRate
+--------- API04: {{BASE_URL}}/restaurant/getRate
 
 - Method: GET
 - lấy thông tin nhà hàng và người dùng đánh giá nhà hàng
@@ -38,7 +38,7 @@ API04: {{BASE_URL}}/restaurant/getRate
 * người lấy thông tin không hợp lệ . lấy thông tin nhà hàng ko có trong database , hoặc người ko trong hệ thống lấy
 * không truyền gì khiến data undefine
 
-API05: {{BASE_URL}}/order/UserOrderFood
+--------- API05: {{BASE_URL}}/order/UserOrderFood
 
 - Method: POST
 - user đặt đồ ăn , phải truyền user_id, res_id , amount . 2 field code và arr_sub_id có thể có hoặc ko cần.
