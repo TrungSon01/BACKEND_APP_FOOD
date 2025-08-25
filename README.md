@@ -18,7 +18,7 @@
 * chỉ cần truyền json 1 trong 2 trường user_id hoặc res_id nếu muốn tìm theo trường nào. có thể truyền cả 2 trả rỗng nếu user ko like nhà hàng này
 * loại bỏ trường hợp ko truyền data bị undefine
 
-API03: {{BASE_URL}}/restaurant/addRate
+--------- API03: {{BASE_URL}}/restaurant/addRate
 
 - Method: POST
 - thêm đánh giá nhà hàng, đã kiểm tra trường hợp :
