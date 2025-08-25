@@ -1,0 +1,15 @@
+import express from "express";
+import { orderController } from "../controllers/order.controller";
+
+const orderRouter = express.Router();
+
+// Tạo route CRUD
+orderRouter.post("/", orderController.create);
+orderRouter.get("/", orderController.findAll);
+
+orderRouter.post("/UserOrderFood", orderController.UserOrderFood);
+orderRouter.get("/:id", orderController.findOne);
+orderRouter.patch("/:id", orderController.update);
+orderRouter.delete("/:id", orderController.remove);
+
+export default orderRouter;
